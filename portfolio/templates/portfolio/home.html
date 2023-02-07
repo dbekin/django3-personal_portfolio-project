@@ -1,7 +1,12 @@
 <h1>Dmitrii's Portfolio</h1>
 
+<a href="{% url 'blog:all_blogs' %}">blog</a>
+<br>
+
 {% load static %}
 <a href="{% static 'portfolio/resume.pdf' %}">Resume</a>
+<br>
+
 <img src="{% static 'portfolio/1673945062355.jpg' %}">
 
 {% for project in projects %}
